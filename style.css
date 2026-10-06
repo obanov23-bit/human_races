@@ -248,6 +248,10 @@ footer {
     margin-top: 60px;
 }
 
+footer p {
+    color: #e3d5ca !important;
+}
+
 @media (max-width: 768px) {
     header h1 { font-size: 2rem; }
     section { padding: 25px; }
