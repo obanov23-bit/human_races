@@ -145,31 +145,53 @@ blockquote {
     margin-bottom: 15px;
 }
 
-figure {
+.image-container {
     margin: 15px 0 20px;
+    position: relative;
     overflow: hidden;
     border-radius: 8px;
+    background-color: #eae1d4;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     display: block;
-    transition: transform 0.5s ease;
 }
 
-.race-item:hover img {
-    transform: scale(1.02);
-}
-
-figcaption {
-    background-color: #3d2a1c;
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(61, 42, 28, 0.95);
     color: #e3d5ca;
-    padding: 10px 15px;
-    font-size: 0.85rem;
-    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.info-overlay h4 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.info-overlay p {
+    color: #e3d5ca;
+    font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 table {
@@ -197,7 +219,10 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-    background-color: var(--bg-card);
+    ba
+
+
+ckground-color: var(--bg-card);
 }
 
 tr {
@@ -225,7 +250,13 @@ footer {
 
 max-width: 768px {
     header h1 { font-size: 2rem; }
-    section { padding:25px; }
+    section { padding: 25px; }
     nav ul { gap: 10px; }
     nav a { padding: 6px 12px; font-size: 0.85rem; }
+    .image-container { height: 280px; }
 }
+
+
+
+
+
