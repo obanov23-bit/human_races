@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -51,7 +51,7 @@
             <article class="race-item">
                 <h3>Монголоидная раса</h3>
                 <div class="image-container">
-                    <img src="mogol.jpg" alt="Представитель монголоидной расы" loading="lazy">
+                    <img src="mongol.jpg" alt="Представитель монголоидной расы" loading="lazy">
                     <div class="info-overlay">
                         <h4>Дополнительный факт</h4>
                         <p>Эпикантус (складка века) имеет жировую прослойку, которая защищала глазное яблоко от обморожения в условиях суровых зим Азии.</p>
@@ -67,10 +67,8 @@
                     <img src="negr.jpg" alt="Представитель негроидной расы" loading="lazy">
                     <div class="info-overlay">
                         <h4>Дополнительный факт</h4>
-                        <p>Широкие ноздри и большой объем слизистой носа у негроидов способствуют эффективному испарению влаги и охлаждению организма.</p>
-
-
-</div>
+                        <p>Широкие ноздри и большой объем слизистой носа у негроидов способствуют эффективному испарению влаги и охлаждению организма.</p>   
+                        </div>
                 </div>
                 <p><strong>Признаки:</strong> Тёмная пигментация кожи, курчавые волосы, широкий нос и толстые губы.</p>
                 <p><strong>Механизм адаптации:</strong> Высокое содержание меланина защищает кожу от жестких солнечных ожогов. Курчавые волосы создают естественную воздушную подушку, спасая голову от перегрева.</p>
@@ -105,7 +103,7 @@
 
         <section id="mixed">
             <h2>Смешанные и переходные группы</h2>
-            <p>В зонах контактов разных народов исторически возникали промежуточные группа людей:</p>
+            <p>В зонах контактов разных народов исторически возникали промежуточные группы людей:</p>
             <table>
                 <thead>
                     <tr>
@@ -142,34 +140,12 @@
         </section>
     </main>
 
-    <fo
-
-
-oter>
+    <footer>
         <p>© 2026 Проект для колледжа. Выполнил студент: [Ваше Имя / Группа]</p>
     </footer>
 
-    <script>
-        document.querySelectorAll('.image-container').forEach(container => {
-            const overlay = container.querySelector('.info-overlay');
-            
-            container.addEventListener('mouseenter', () => {
-                overlay.style.opacity = '1';
-                overlay.style.transform = 'translateY(0)';
-            });
-            
-            container.addEventListener('mouseleave', () => {
-                overlay.style.opacity = '0';
-                overlay.style.transform = 'translateY(100%)';
-            });
-        });
-    </script>
+ 
+    <script src="script.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
